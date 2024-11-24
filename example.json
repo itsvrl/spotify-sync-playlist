@@ -1,4 +1,4 @@
-{ // You can get your credentials here: https://developer.spotify.com/dashboard/
+{
     "CLIENT_ID": "your spotify client id",
     "CLIENT_SECRET": "your spotify client secret",
     "REDIRECT_URI": "http://localhost:8888/callback",
