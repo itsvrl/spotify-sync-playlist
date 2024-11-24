@@ -6,4 +6,4 @@ Copy example and create a secrets.json
 cp example.json secrets.json
 ```
 
-**You can get your credentials here: https://developer.spotify.com/dashboard/ **
+**You can get your credentials @ https://developer.spotify.com/dashboard/ click the link.**
