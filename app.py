@@ -11,6 +11,7 @@ from auth import get_authorization_url  # Import get_authorization_url from auth
 
 app = Flask(__name__)
 app.secret_key = '5cca5e5e-01f2-4bc5-af7f-23d77e2979ae'  # Replace with a random key
+PLAYLIST_NAME = "Played last 24h"
 
 # Load credentials from secrets.json
 with open('secrets.json') as f:
