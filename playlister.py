@@ -29,7 +29,7 @@ def get_user_playlists(access_token, user_id):
     response = http.get(url, headers=headers)
     return response.json().get("items", [])
 
-def create_playlist(access_token, user_id, name="Last 24h Played Tracks"):
+def create_playlist(access_token, user_id, name="Last 50 Tracks"):
     url = f"https://api.spotify.com/v1/users/{user_id}/playlists"
     headers = {
         "Authorization": f"Bearer {access_token}",
@@ -89,7 +89,7 @@ def main(access_token):
     track_uris = [track["track"]["uri"] for track in recently_played_tracks]
     
     playlists = get_user_playlists(access_token, user_id)
-    playlist_name = "Recently Played Tracks"
+    playlist_name = "Played last 24h"
     playlist_id = None
     
     for playlist in playlists:
