@@ -1,4 +1,4 @@
-# app.py
+# app.py - Application entry point
 
 from flask import Flask, request, redirect, session, url_for
 import os
